@@ -355,11 +355,10 @@ button {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: #ffffff;
-  /* width: 100%; */
-  max-width: 496px;
+  max-width: 216px;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .main-section-one-button {
   display: block;
@@ -386,7 +385,7 @@ button {
   .main-section-one-title {
     font-size: 56px;
     line-height: 1.07;
-    padding-bottom: 48px;
+    margin-bottom: 36px;
     max-width: 496px;
   }
   .main-section-one-effective-solutions {
@@ -409,6 +408,10 @@ button {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/people-office-1-tab-2x.jpg");
+  }
+  .main-section-one-title {
+    max-width: 496px;
+    margin-bottom: 48px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -447,7 +450,7 @@ button {
 }
 .main-section-two-about-us-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;
   justify-content: center;
 }
@@ -467,15 +470,19 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.main-section-two-about-us-list-item {
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
+  .main-section-two-about-us-subtitle {
+    text-align: start;
+  }
   .main-section-two-about-us {
     max-width: 768px;
     padding: 96px 0;
   }
   .main-section-two-about-us-list {
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 72px 24px;
   }
   .main-section-two-about-us-list-item {
@@ -530,12 +537,13 @@ button {
 
 .main-section-three-our-team-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 72px;
 }
 .main-section-three-our-team-list-li {
+  width: 264px;
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -594,8 +602,6 @@ button {
 }
 @media screen and (min-width: 768px) {
   .main-section-three-our-team-list {
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 64px 24px;
   }
 }
@@ -664,6 +670,13 @@ button {
 .main-section-four-our-portfolio-texthover {
   display: none;
 }
+@media screen and (max-width: 1157px) {
+  .main-section-four-our-portfolio-list-item {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .main-section-four-our-portfolio-list-item {
     width: calc((100% - 24px) / 2);
@@ -744,7 +757,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  /* max-width: 264px; */
+  /* min-width: 264px; */
 }
 .footer-logo-paragraf {
   margin-bottom: 72px;
@@ -841,7 +854,7 @@ button {
   }
   .foot-flex-tab {
     display: flex;
-    gap: 24px;
+    gap: 120px;
     justify-content: start;
   }
   .footer-social-media {
@@ -852,6 +865,7 @@ button {
     justify-content: left;
     text-align: left;
     margin: auto 0;
+    width: 264px;
   }
   .footer-subscribe-form {
     display: flex;
@@ -860,22 +874,22 @@ button {
   .btn-footer-subs {
     margin: auto 0;
   }
+  /* .footer-flex {
+    padding-left: 108px;
+  } */
 }
 
 @media screen and (min-width: 1158px) {
-  .footer {
+  /* .footer-flex {
+    padding-left: 156px;
+  } */
+  /* .footer {
     padding: 100px 0px;
-  }
+  } */
 
   .footer-link:hover,
   .footer-link:focus {
     color: #404bbf;
-  }
-
-  .footer-flex {
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
   }
 
   .footer-media-list-li-a:hover,
@@ -883,9 +897,9 @@ button {
     background-color: #31d0aa;
   }
 
-  .footer-logo-paragraf {
+  /* .footer-logo-paragraf {
     margin-right: 120px;
-  }
+  } */
   .footer-flex {
     display: flex;
     justify-content: flex-start;
@@ -959,7 +973,7 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   resize: none;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1116,16 +1130,19 @@ button {
   margin-bottom: 24px;
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-label span {
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
 }
+
 .modal-checkbox-label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
 }
 .modal-checkbox-span {
   width: 16px;
@@ -1140,6 +1157,7 @@ button {
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 
 .modal-checkbox-a {
@@ -1149,6 +1167,7 @@ button {
   .modal {
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
   }
 }
 @media screen and (min-width: 1158px) {
