@@ -148,7 +148,7 @@
     </header>
 
     <main>
-      <!-- <section class="main-section-one-effective-solutions">
+      <section class="main-section-one-effective-solutions">
         <div class="container">
           <h1 class="main-section-one-title">
             Effective Solutions for Your Business
@@ -157,9 +157,9 @@
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="main-section-two-about-us">
+      <section class="main-section-two-about-us">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="main-section-two-about-us-list">
@@ -213,15 +213,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="main-section-three-our-team">
+      <section class="main-section-three-our-team">
         <div class="container">
           <h2 class="main-section-three-our-team-title">Our Team</h2>
           <ul class="main-section-three-our-team-list">
             <li class="main-section-three-our-team-list-li">
               <img
-                src="./images/img-01.jpg"
+                srcset="./images/img-01.jpg 1x, ./images/img-01-2x.jpg 2x"
+                src="./images/img-01-2x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -281,6 +282,7 @@
             </li>
             <li class="main-section-three-our-team-list-li">
               <img
+                srcset="./images/img-02.jpg 1x, ./images/img-02-2x.jpg 2x"
                 src="./images/img-02.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -341,6 +343,7 @@
             </li>
             <li class="main-section-three-our-team-list-li">
               <img
+                srcset="./images/img-03.jpg 1x, ./images/img-03-2x.jpg 2x"
                 src="./images/img-03.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -401,6 +404,7 @@
             </li>
             <li class="main-section-three-our-team-list-li">
               <img
+                srcset="./images/img-04.jpg 1x, ./images/img-04-2x.jpg 2x"
                 src="./images/img-04.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -461,11 +465,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- ------------------------------------------------main-section-four-our-portfolio -------------------------------------------------->
 
-      <!-- <section class="main-section-four-our-portfolio">
+      <section class="main-section-four-our-portfolio">
         <div class="container portfolio">
           <h2 class="main-section-four-our-portfolio-title">Our Portfolio</h2>
 
@@ -473,6 +477,10 @@
             <li class="main-section-four-our-portfolio-list-item">
               <div class="main-section-four-our-portfolio-picture-wrap">
                 <img
+                  srcset="
+                    ./images/banking-app.jpg    1x,
+                    ./images/banking-app-2x.jpg 2x
+                  "
                   src="./images/banking-app.jpg"
                   alt="banking app"
                   width="360"
@@ -494,6 +502,10 @@
             <li class="main-section-four-our-portfolio-list-item">
               <div class="main-section-four-our-portfolio-picture-wrap">
                 <img
+                  srcset="
+                    ./images/Cashless-Payment.jpg    1x,
+                    ./images/Cashless-Payment-2x.jpg 2x
+                  "
                   src="./images/Cashless-Payment.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -515,6 +527,10 @@
             <li class="main-section-four-our-portfolio-list-item">
               <div class="main-section-four-our-portfolio-picture-wrap">
                 <img
+                  srcset="
+                    ./images/Meditation-App.jpg    1x,
+                    ./images/Meditation-App-2x.jpg 2x
+                  "
                   src="./images/Meditation-App.jpg"
                   alt="Meditation App"
                   width="360"
@@ -537,6 +553,10 @@
             <li class="main-section-four-our-portfolio-list-item">
               <div class="main-section-four-our-portfolio-picture-wrap">
                 <img
+                  srcset="
+                    ./images/Taxi-Service.jpg    1x,
+                    ./images/Taxi-Service-2x.jpg 2x
+                  "
                   src="./images/Taxi-Service.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -558,6 +578,10 @@
             <li class="main-section-four-our-portfolio-list-item">
               <div class="main-section-four-our-portfolio-picture-wrap">
                 <img
+                  srcset="
+                    ./images/Screen-Illustrations.jpg    1x,
+                    ./images/Screen-Illustrations-2x.jpg 2x
+                  "
                   src="./images/Screen-Illustrations.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -579,6 +603,10 @@
             <li class="main-section-four-our-portfolio-list-item">
               <div class="main-section-four-our-portfolio-picture-wrap">
                 <img
+                  srcset="
+                    ./images/Online-Courses.jpg    1x,
+                    ./images/Online-Courses-2x.jpg 2x
+                  "
                   src="./images/Online-Courses.jpg"
                   alt="Online Courses"
                   width="360"
@@ -599,61 +627,64 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-flex">
-        <div class="footer-logo-paragraf">
-          <a class="footer-link" href="./index.html"
-            >Web<span class="footer-link-span">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
+        <div class="foot-flex-tab">
+          <div class="footer-logo-paragraf">
+            <a class="footer-link" href="./index.html"
+              >Web<span class="footer-link-span">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-media">
+            <p class="footpar">Social media</p>
+            <ul class="footer-media-list">
+              <li class="footer-media-list-li">
+                <a
+                  class="footer-media-list-li-a"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  ><svg class="svgsocial" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-1"></use></svg
+                ></a>
+              </li>
+              <li class="footer-media-list-li">
+                <a
+                  class="footer-media-list-li-a"
+                  href="https://x.com/"
+                  target="_blank"
+                  ><svg class="svgsocial" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use></svg
+                ></a>
+              </li>
+              <li class="footer-media-list-li">
+                <a
+                  class="footer-media-list-li-a"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  ><svg class="svgsocial" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use></svg
+                ></a>
+              </li>
+              <li class="footer-media-list-li">
+                <a
+                  class="footer-media-list-li-a"
+                  href="https://ua.linkedin.com/"
+                  target="_blank"
+                  ><svg class="svgsocial" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-social-media">
-          <p class="futpar">Social media</p>
-          <ul class="footer-media-list">
-            <li class="footer-media-list-li">
-              <a
-                class="footer-media-list-li-a"
-                href="https://www.instagram.com/"
-                target="_blank"
-                ><svg class="svgsocial" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-1"></use></svg
-              ></a>
-            </li>
-            <li class="footer-media-list-li">
-              <a
-                class="footer-media-list-li-a"
-                href="https://x.com/"
-                target="_blank"
-                ><svg class="svgsocial" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use></svg
-              ></a>
-            </li>
-            <li class="footer-media-list-li">
-              <a
-                class="footer-media-list-li-a"
-                href="https://www.facebook.com/"
-                target="_blank"
-                ><svg class="svgsocial" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use></svg
-              ></a>
-            </li>
-            <li class="footer-media-list-li">
-              <a
-                class="footer-media-list-li-a"
-                href="https://ua.linkedin.com/"
-                target="_blank"
-                ><svg class="svgsocial" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
+
         <div class="footer-subscribe">
           <p class="footpar">Subscribe</p>
           <form class="footer-subscribe-form">
@@ -675,11 +706,11 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!--------------------------------backdrop-------------------------------->
 
-    <!-- <div class="backdrop" data-modal>
+    <div class="backdrop (del-me)is-open" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-icon-x" width="8" height="8">
@@ -763,7 +794,7 @@
           <button class="btn-modal-send" type="button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
