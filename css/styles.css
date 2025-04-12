@@ -1131,12 +1131,6 @@ button {
   margin-bottom: 24px;
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-span {
-  background-color: #404bbf;
-  border: none;
-  fill: #f4f4fd;
-}
-
 .modal-checkbox-label {
   font-size: 12px;
   line-height: 1.17;
@@ -1144,7 +1138,16 @@ button {
   color: #8e8f99;
   display: flex;
   align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
 }
+
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-span {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
 .modal-checkbox-span {
   width: 16px;
   height: 16px;
@@ -1172,4 +1175,8 @@ button {
   }
 }
 @media screen and (min-width: 1158px) {
+  .modal-checkbox-label:hover {
+    border: 1px solid #8c92cf;
+    fill: #f4f4fd;
+  }
 }
